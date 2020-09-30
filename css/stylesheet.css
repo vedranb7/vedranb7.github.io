@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+section {
+    padding: 100px;
+}
+
+.banner {
+    position: relative;
+    min-height: 100vh;
+    background-image: url(bg/naslovnica2.jpg); /* Fotografija preuzeta od: Julian Hochgesang (https://unsplash.com/@julianhochgesang) na Unsplash web-stranici */
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 span {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.banner h3 {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.banner h4 {
+    color: #fff;
+    font-weight: 400;
+}
+
+.btn {
+    position: relative;
+    background: #2196f3;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky {
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo {
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .logo {
+    color: #111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    position:  relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a {
+    color: #111;
+}
+
+.naslov {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #111;
+}
+
+.naslov h2 {
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contentbox {
+    padding-right: 30px;
+}
+
+.contentbox h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.w50 {
+    min-width: 50px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+img {
+    max-width: 100%;
+}
+
+.usluge {
+    background: #111;
+
+}
+
+.naslov.bijeli {
+    color: #fff;
+}
+
+.usluge .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.usluge .content .uslugebox {
+    padding: 40px 20px;
+    background: #222;
+    color: #fff;
+    max-width: 340px;
+    margin: 20px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.usluge .content .uslugebox:hover {
+    background: #2196f3;
+}
+
+.usluge .content .uslugebox img {
+    max-width: 80px;
+    filter: invert(1);
+}
+
+.usluge .content .uslugebox h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.radovi .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.radovi .content .radovibox {
+    width: 50%;
+    padding: 20px;
+}
+
+.radovi .content .radovibox img {
+    max-width: 100%;
+}
+
+.feedback {
+    background: #f7f7f7;
+}
+
+.feedback .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.feedback .content .feedbackbox {
+    max-width: calc(50% - 40px);
+    padding: 60px 40px;
+    margin: 20px;
+    background: #2196f3;
+}
+
+.feedback .content .feedbackbox p {
+    color: #fff;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.feedback .content .feedbackbox h3 {
+    margin-top: 40px;
+    text-align: end;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1em;
+}
+
+.feedback .content .feedbackbox h3 span {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.kontakt {
+    background: #111;
+}
+
+.formbox {
+    min-width: 60%;
+}
+
+.formbox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.formbox form h3,
+.kontaktinfo h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.formbox form input,
+.formbox form textarea {
+    margin-bottom: 20px;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background: #222;
+    color: #fff;
+    resize: none;
+}
+
+.formbox form textarea {
+    min-height: 200px;
+}
+
+.formbox form input::placeholder,
+.formbox form textarea::placeholder {
+    color: #999;
+}
+
+#formbutton {
+    position: relative;
+    max-width: 100px;
+    background: #222;
+    border: none;
+    color:  #2196f3;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+
+#formbutton:hover {
+    background: #2196f3;
+    color: #111;
+    box-shadow: 0 0 50px #2196f3;
+    transition-delay: 0.5s;
+}
+
+#formbutton:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #2196f3;
+    border-left: 2px solid #2196f3;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+}
+
+#formbutton:hover:before {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+
+}
+
+#formbutton:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #2196f3;
+    border-right: 2px solid #2196f3;
+    transition: 0.5s;
+    transition-delay: 0.5s;
+
+}
+
+#formbutton:hover:after {
+    width: 100%;
+    height: 100%;
+    transition-delay: 0s;
+
+}
+
+.kontaktinfo {
+    min-width: 40%;
+}
+
+.kontaktinfobox {
+    position: relative;
+}
+
+.kontaktinfobox .box {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.kontaktinfobox .box .ikona {
+    min-width: 40px;
+    padding-top: 4px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.kontaktinfobox .box .tekst {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.kontaktinfobox .box .tekst h3 {
+    font-weight: 500;
+    color: #2196f3;
+    margin-bottom: 0;
+}
+
+/*Responsivnost*/
+@media (max-width: 991px) {
+    header {
+        background-color: #111;
+    }
+    header,
+    header.sticky {
+        padding: 20px 50px;        
+    }
+    
+    .menu {
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        display: block;
+        padding: 100px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: #fff;
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active {
+        left: 0;
+    }
+    header ul li a {
+        color: #111;
+        font-size: 24px;
+        margin: 10px;
+    }
+    .toggle {
+        width: 40px;
+        height: 40px;
+        background: url(bg/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active {
+        background: url(bg/close.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    header.sticky .toggle {
+        filter: invert(1); 
+    }
+    section {
+        padding: 100px 50px;
+    }
+    .banner {
+        padding: 150px 50px 100px;
+        background-position: left;
+    }
+    .banner h2 {
+        font-size: 1.5em;
+    }
+    .banner h3 {
+        font-size: 1em; 
+    }
+    .btn {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+    .heading h2 {
+        font-size: 24px;
+    }
+    .contentbox h3 {
+        font-size: 20px;
+    }
+    .content {
+        flex-direction: column;
+    }
+    .w50 {
+        margin-bottom: 20px;
+    }
+    .usluge .content .uslugebox {
+        margin: 10px;
+    }
+    .radovi .content .radovibox {
+        width: 100%;
+        padding: 10px;
+    }
+    .feedback .content .feedbackbox {
+        max-width: calc(100% - 20px);
+        padding: 40px 20px;
+        margin: 10px;
+        background: #2196f3;
+    }
+    .feedback .content .feedbackbox h3 {
+        margin-top: 20px;
+    }
+    .kontaktinfo {
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 600px) {
+     header,
+     header.sticky {
+        padding: 20px 20px;
+     }
+     .banner {
+         padding: 150px 20px 100px; 
+     }
+     section {
+         padding: 100px 20px;
+     }
+}
