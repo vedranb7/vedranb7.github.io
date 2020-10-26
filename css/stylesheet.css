@@ -12,16 +12,24 @@ section {
     padding: 100px;
 }
 
+.no-webp .banner {
+    background-image: url(bg/naslovnica2.jpg); /* Fotografija preuzeta od: Julian Hochgesang (https://unsplash.com/@julianhochgesang) na Unsplash web-stranici */
+}
+
+.webp .banner {
+    background-image: url(bg/naslovnica2.webp); 
+}
+
 .banner {
     position: relative;
     min-height: 100vh;
-    background-image: url(bg/naslovnica2.jpg); /* Fotografija preuzeta od: Julian Hochgesang (https://unsplash.com/@julianhochgesang) na Unsplash web-stranici */
     background-size: cover;
     background-position: right;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .banner h2 {
     font-size: 3em;
