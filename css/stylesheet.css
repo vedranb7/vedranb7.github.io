@@ -207,10 +207,16 @@ img {
 .radovi .content .radovibox {
     width: 50%;
     padding: 20px;
+    text-align: center;
 }
 
 .radovi .content .radovibox img {
     max-width: 100%;
+    height: 250px;
+}
+
+.radovi .content .radovibox img:hover {
+    border: 3px solid #2196f3;
 }
 
 .feedback {
